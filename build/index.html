@@ -5,20 +5,53 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="Smart Device" content="Производство и монтаж печатных плат.">
+  <meta name="Smart Device" content="Производство и монтаж печатных плат и комплектующих.">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container"></div>
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__inner">
+          <div class="page-header__top">
+            <a class="page-header__logo" href="index.html" aria-label="Smart Device">
+              <picture>
+                <!-- <source type="image/svg+xml" media="(min-width: 1280px)" srcset="img/logo.svg#desctop">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo.svg#tablet"> -->
+                <img src="img/svg/logo-smart-device-desctop.svg"  width="34"
+                  height="38""Магазин CAT ENERGY." width="215" height="55" alt="Smart Device">
+              </picture>
+            </a>
+            <div class="page-header__info info-communication">
+              <div class="page-header__info info-communication">
+
+                <ul class="info-communication__list">
+                  <li class="info-communication__item">
+
+                  </li>
+                  <li class="info-communication__item">
+
+                  </li>
+                </ul>
+
+                <button class="info-communication__order button" type="button"><span></span></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
     </header>
-    <main>
+    <main class="main-container">
       <section class="intro">
         <div class="container">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <h1>Тестовая страница.</h1>
+          <p>На данной странице показан пример модальных окон.</p>
+          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+          </p>
+          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
         </div>
       </section>
     </main>
@@ -27,6 +60,37 @@
     </footer>
   </div>
 
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
