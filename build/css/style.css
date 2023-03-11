@@ -674,6 +674,13 @@ button,
   opacity: 0.8;
 }
 
+.btn--order {
+  background-color: inherit;
+  text-transform: uppercase;
+  border: 1px solid #F2F5F7;
+  border-radius: 3px;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1311,13 +1318,15 @@ button,
   min-height: 120px;
   color: #ffffff;
   background-color: #000000;
+  background: url("../img/header-background.png") no-repeat center;
 }
 
 .page-header__inner {
   display: block;
   width: 100%;
-  max-width: 1920px;
+  max-width: 890px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .page-header__top {
@@ -1329,9 +1338,54 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+.page-header__logo {
+  margin-right: 160px;
+}
+
+.info-communication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.info-communication__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-communication__link {
+  padding-left: 35px;
+  position: relative;
+}
+
+.info-communication__link::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.info-communication__link--email::before {
+  background: url("../../img/sprite/email.svg") no-repeat center/20px 20px;
+}
+
+.info-communication__link--phone::before {
+  background: url("../../img/sprite/phone.svg") no-repeat center/20px 20px;
+}
+
+.info-communication__link a {
+  color: #ffffff;
 }
 
 /* @mixin hover-focus {
