@@ -688,6 +688,18 @@ button,
   color: #F2F5F7;
 }
 
+.btn--leading {
+  padding: 15px 25px;
+  background: #00B2FF;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1322,10 +1334,11 @@ button,
 }
 
 .page-header {
+  z-index: 11;
   min-height: 120px;
   color: #ffffff;
   background-color: #000000;
-  background: url("../img/header-background.png") no-repeat center;
+  background: url("../img/header-background.png") no-repeat center/cover;
 }
 
 .page-header__inner {
@@ -1409,6 +1422,35 @@ button,
   font-size: 16px;
   line-height: 1.125;
   color: #F2F5F7;
+}
+
+.leading {
+  margin-top: -60px;
+  background-color: #000000;
+  color: #F2F5F7;
+  background: url("../../img/main-background.jpg") no-repeat center/cover;
+}
+
+.leading__wrapper {
+  padding: 244px 0 280px 434px;
+}
+
+.leading__heading {
+  margin: 0 0 32px;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1.175;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.leading__description {
+  margin: 0 0 48px;
+  max-width: 685px;
+  font-family: "PT Mono", monospace;
+  font-size: 22px;
+  line-height: 1.55;
 }
 
 /* @mixin hover-focus {
@@ -1557,5 +1599,15 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .page-header {
+    background-image: url("../img/header-background@2x.png");
+  }
+
+  .leading {
+    background-image: url("../img/header-background@2x.png");
   }
 }

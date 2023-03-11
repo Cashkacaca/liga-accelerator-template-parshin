@@ -1,9 +1,14 @@
 .page-header {
-  // z-index: 11;
+  z-index: 11;
   min-height: 120px;
   color: $color-default-white;
   background-color: $color-default-black;
-  background: url('../img/header-background.png') no-repeat center;
+  background: url('../img/header-background.png') no-repeat center / cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-background@2x.png");
+  }
+
 }
 
 .page-header__inner {
