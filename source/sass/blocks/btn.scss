@@ -26,8 +26,15 @@
 }
 
 .btn--order {
+  padding: 10px 15px;
   background-color: inherit;
-  text-transform: uppercase;
   border: 1px solid #F2F5F7;
   border-radius: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F2F5F7;
 }
