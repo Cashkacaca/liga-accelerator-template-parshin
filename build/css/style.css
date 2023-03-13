@@ -700,6 +700,24 @@ button,
   text-transform: uppercase;
 }
 
+.btn--unwrap {
+  display: block;
+  min-width: 180px;
+  margin-top: 40px;
+  padding: 12px 4px 15px;
+  background-color: inherit;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1448,7 +1466,7 @@ button,
 .advantages__wrapper {
   margin: 0 auto;
   max-width: 1220px;
-  padding: 120px 0 0 8px;
+  padding: 120px 0 60px 8px;
 }
 
 .advantages__cards {
@@ -1523,6 +1541,48 @@ button,
 
 .advantage-card:hover .advantage-card__description {
   color: #F2F5F7;
+}
+
+.history {
+  background-color: #F8FDFF;
+}
+
+.history__wrap {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 60px 0 102px 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 1fr;
+  grid-template-columns: 150px 1fr;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+}
+
+.history__heading {
+  margin: 0 0 13px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.42;
+  color: #041827;
+}
+
+.history__text {
+  margin: 0 0 19px;
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #041827;
+}
+
+.history__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.history__text--hidden {
+  display: none;
 }
 
 /* @mixin hover-focus {

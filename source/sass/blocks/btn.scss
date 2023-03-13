@@ -50,3 +50,21 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
+.btn--unwrap {
+  display: block;
+  min-width: 180px;
+  margin-top: 40px;
+  padding: 12px 4px 15px;
+  background-color: inherit;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+}
