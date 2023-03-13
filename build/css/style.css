@@ -675,7 +675,7 @@ button,
 }
 
 .btn--order {
-  padding: 10px 15px;
+  padding: 11px 15px;
   background-color: inherit;
   border: 1px solid #F2F5F7;
   border-radius: 3px;
@@ -689,7 +689,7 @@ button,
 }
 
 .btn--leading {
-  padding: 15px 25px;
+  padding: 15px 30px 19px 25px;
   background: #00B2FF;
   border-radius: 3px;
   font-weight: 700;
@@ -1344,7 +1344,7 @@ button,
 .page-header__inner {
   display: block;
   width: 100%;
-  max-width: 1220px;
+  max-width: 1204px;
   margin: 0 auto;
   padding-top: 30px;
 }
@@ -1397,31 +1397,19 @@ button,
 }
 
 .info-communication__link {
-  padding-left: 35px;
-  position: relative;
-}
-
-.info-communication__link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 20px;
-  height: 20px;
-}
-
-.info-communication__link--email::before {
-  background: url("../../img/sprite/email.svg") no-repeat center/20px 20px;
-}
-
-.info-communication__link--phone::before {
-  background: url("../../img/sprite/phone.svg") no-repeat center/20px 20px;
-}
-
-.info-communication__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+  width: 100%;
   font-family: "PT Mono", monospace;
   font-size: 16px;
   line-height: 1.125;
   color: #F2F5F7;
+}
+
+.info-communication__icon {
+  margin-right: 15px;
 }
 
 .leading {
