@@ -718,6 +718,13 @@ button,
   color: #00B2FF;
 }
 
+.btn--products {
+  min-width: 60px;
+  min-height: 60px;
+  background: #00B2FF;
+  border-radius: 3px 0 0 0;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1364,7 +1371,7 @@ button,
   width: 100%;
   max-width: 1222px;
   margin: 0 auto;
-  padding: 30px 9px 0 9px;
+  padding: 30px 0 0;
 }
 
 .page-header__top {
@@ -1466,7 +1473,7 @@ button,
 .advantages__wrapper {
   margin: 0 auto;
   max-width: 1220px;
-  padding: 120px 0 60px 8px;
+  padding: 120px 0 60px;
 }
 
 .advantages__cards {
@@ -1550,7 +1557,7 @@ button,
 .history__wrap {
   margin: 0 auto;
   max-width: 1220px;
-  padding: 60px 0 102px 8px;
+  padding: 60px 0 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 150px 1fr;
@@ -1583,6 +1590,84 @@ button,
 
 .history__text--hidden {
   display: none;
+}
+
+.products {
+  background-color: #041827;
+  color: #ffffff;
+}
+
+.products__wrap {
+  margin: 0 auto;
+  padding: 66px 0 140px;
+  max-width: 1220px;
+}
+
+.products__heading {
+  margin: 0 0 50px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.42;
+}
+
+.products__cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[3];
+  grid-template-columns: repeat(3, 350px);
+  -webkit-column-gap: 85px;
+  -moz-column-gap: 85px;
+  column-gap: 85px;
+  row-gap: 15px;
+}
+
+.products__card {
+  min-height: 650px;
+  position: relative;
+}
+
+.products__card--fabrication {
+  background: url("../../img/products/product-1.jpg") no-repeat center/cover;
+}
+
+.products__card--montage {
+  background: url("../../img/products/product-2.jpg") no-repeat center/cover;
+}
+
+.products__card--lighting {
+  background: url("../../img/products/product-3.jpg") no-repeat center/cover;
+}
+
+.products__card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 50px 80px 70px 40px;
+}
+
+.products__card-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.products__card-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* @mixin hover-focus {
@@ -1741,5 +1826,17 @@ button,
 
   .leading {
     background-image: url("../img/header-background@2x.png");
+  }
+
+  .products__card--fabrication {
+    background-image: url("../../img/products/product-1@2x.jpg");
+  }
+
+  .products__card--montage {
+    background-image: url("../../img/products/product-2@2x.jpg");
+  }
+
+  .products__card--lighting {
+    background-image: url("../../img/products/product-3@2x.jpg");
   }
 }
