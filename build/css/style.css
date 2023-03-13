@@ -689,7 +689,7 @@ button,
 }
 
 .btn--leading {
-  padding: 15px 30px 19px 25px;
+  padding: 16px 30px 18px 25px;
   background: #00B2FF;
   border-radius: 3px;
   font-weight: 700;
@@ -1344,9 +1344,9 @@ button,
 .page-header__inner {
   display: block;
   width: 100%;
-  max-width: 1204px;
+  max-width: 1222px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 30px 9px 0 9px;
 }
 
 .page-header__top {
@@ -1434,11 +1434,95 @@ button,
 }
 
 .leading__description {
-  margin: 0 0 48px;
+  margin: 0 0 47px;
   max-width: 685px;
   font-family: "PT Mono", monospace;
   font-size: 22px;
   line-height: 1.55;
+}
+
+.advantages {
+  background-color: #F8FDFF;
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 120px 0 0 8px;
+}
+
+.advantages__cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  row-gap: 30px;
+}
+
+.advantage-card {
+  width: 595px;
+  min-height: 300px;
+  padding: 40px 45px 35px;
+  outline: 1px solid #EBEBEB;
+  position: relative;
+}
+
+.advantage-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #00B2FF;
+}
+
+.advantage-card:hover {
+  outline: none;
+  background-color: #00B2FF;
+  color: #F2F5F7;
+}
+
+.advantage-card__icon {
+  margin-bottom: 20px;
+  width: 35px;
+  height: 35px;
+  stroke: #00B2FF;
+}
+
+.advantage-card:hover .advantage-card__icon {
+  stroke: #F2F5F7;
+}
+
+.advantage-card__title {
+  margin: 0 0 15px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #00B2FF;
+}
+
+.advantage-card:hover .advantage-card__title {
+  color: #F2F5F7;
+}
+
+.advantage-card__description {
+  margin: 0;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-size: 1.35;
+  line-height: 135%;
+  color: #041827;
+}
+
+.advantage-card:hover .advantage-card__description {
+  color: #F2F5F7;
 }
 
 /* @mixin hover-focus {

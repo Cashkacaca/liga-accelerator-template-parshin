@@ -1,0 +1,59 @@
+.advantage-card {
+  width: 595px;
+  min-height: 300px;
+  padding: 40px 45px 35px;
+  outline: 1px solid #EBEBEB;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #00B2FF;
+  }
+
+  &:hover {
+    outline: none;
+    background-color: #00B2FF;
+    color: #F2F5F7;
+  }
+}
+
+.advantage-card__icon {
+  margin-bottom: 20px;
+  width: 35px;
+  height: 35px;
+  stroke: #00B2FF;
+}
+
+.advantage-card:hover .advantage-card__icon {
+  stroke: #F2F5F7;
+}
+
+.advantage-card__title {
+  margin: 0 0 15px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #00B2FF;
+}
+
+.advantage-card:hover .advantage-card__title {
+  color: #F2F5F7;
+}
+
+.advantage-card__description {
+  margin: 0;
+  font-family: $ff-pt-mono;
+  font-weight: 400;
+  font-size: 1.35;
+  line-height: 135%;
+  color: #041827;
+}
+
+.advantage-card:hover .advantage-card__description {
+  color: #F2F5F7;
+}
