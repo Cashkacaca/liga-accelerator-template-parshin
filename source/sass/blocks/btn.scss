@@ -75,3 +75,21 @@
   background: #00B2FF;
   border-radius: 3px 0 0 0;
 }
+
+.btn--form {
+  display: block;
+  width: 100%;
+  max-width: 265px;
+  min-height: 45px;
+  padding-top: 16px;
+  background: #041427;
+  border-radius: 3px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+}

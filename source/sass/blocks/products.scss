@@ -5,7 +5,7 @@
 
 .products__wrap {
   margin: 0 auto;
-  padding: 66px 0 140px;
+  padding: 66px 0 143px;
   max-width: 1220px;
 }
 
@@ -33,26 +33,26 @@
 }
 
 .products__card--fabrication {
-  background: url('../../img/products/product-1.jpg') no-repeat center / cover;
+  background: url('../img/products/product-1.jpg') no-repeat center / cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/products/product-1@2x.jpg");
+    background-image: url("../img/products/product-1@2x.jpg");
   }
 }
 
 .products__card--montage {
-  background: url('../../img/products/product-2.jpg') no-repeat center / cover;
+  background: url('../img/products/product-2.jpg') no-repeat center / cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/products/product-2@2x.jpg");
+    background-image: url("../img/products/product-2@2x.jpg");
   }
 }
 
 .products__card--lighting {
-  background: url('../../img/products/product-3.jpg') no-repeat center / cover;
+  background: url('../img/products/product-3.jpg') no-repeat center / cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/products/product-3@2x.jpg");
+    background-image: url("../img/products/product-3@2x.jpg");
   }
 }
 

@@ -166,7 +166,6 @@
 
       <section class="products">
         <div class="container">
-
           <div class="products__wrap">
             <h2 class="products__heading">Smart Device предлагает следующие товары и услуги</h2>
 
@@ -205,11 +204,71 @@
                 </a>
               </li>
 
-
             </ul>
 
           </div>
+        </div>
+      </section>
 
+      <section class="feedback">
+        <h2 class="visually-hidden">Обратная связь.</h2>
+        <div class="container">
+          <div class="feedback__wrapper">
+
+            <div class="feedback__image-wrapper">
+              <picture>
+                <!-- <source srcset="img/food-packaging-desktop@1x.png, img/food-packaging-desktop@2x.png 2x" type="image/png" media="(min-width: 1280px)">
+                <source srcset="img/food-packaging-tablet@1x.png, img/food-packaging-tablet@2x.png 2x" type="image/png" media="(min-width: 768px)"> -->
+                <img class="feedback__image" src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x"
+                  width="510" height="285" alt="Модель самолёта.">
+              </picture>
+            </div>
+
+            <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="form__fieldset">
+                <legend class="form__heading">Остались вопросы? Задайте их нам!</legend>
+
+                <p class="form__description">Мы проконсультируем Вас бесплатно</p>
+
+                <ul class="form__list">
+
+                  <li class="form__item">
+                    <label class="form__label">
+                      <span class="visually-hidden">Имя</span>
+                      <input type="text" name="name" placeholder="Имя" required>
+                    </label>
+                  </li>
+
+                  <li class="form__item">
+                    <label class="form__label">
+                      <span class="visually-hidden">Телефон</span>
+                      <input type="tel" name="phone" placeholder="Телефон" required data-validate-type="phone">
+                    </label>
+                  </li>
+
+                  <li class="form__item form__item--textarea">
+                    <textarea name="question" id="question" cols="35" rows="5" placeholder="Ваш вопрос"></textarea>
+                  </li>
+
+                  <li class="form__item form__item--button">
+                    <button class="btn btn--form" type="submit">Задать вопрос</button>
+                  </li>
+
+                  <li class="form__item form__item--checkbox">
+                    <label class="form__label">
+                      <input type="checkbox" name="consent" value="consent" checked="checked">
+                      <span>Я согласен на обработку персональных данных</span>
+                      <svg width="9" height="6">
+                        <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
+                      </svg>
+                    </label>
+                  </li>
+
+                </ul>
+              </fieldset>
+            </form>
+
+          </div>
         </div>
       </section>
 

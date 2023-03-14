@@ -3,7 +3,7 @@
   background-color: $color-default-black;
   color: #F2F5F7;
 
-  background: url('../../img/main-background.jpg') no-repeat center / cover;
+  background: url('../img/main-background.jpg') no-repeat center / cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header-background@2x.png");

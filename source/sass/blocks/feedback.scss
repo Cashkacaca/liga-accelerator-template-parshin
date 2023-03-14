@@ -1,0 +1,27 @@
+.feedback {
+  background-color: #00B3FF;
+  background: url('../img/form-background.png') no-repeat center/cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-background@2x.png");
+  }
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 166px 0 248px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.feedback__image-wrapper {
+  position: relative;
+}
+
+.feedback__image {
+  position: absolute;
+  left: 0;
+  top: 19%;
+}

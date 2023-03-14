@@ -1,0 +1,120 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__heading {
+  margin-bottom: 10px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.42;
+  color: $color-default-white;
+}
+
+.form__description {
+  margin: 0 0 35px;
+  font-family: $ff-pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: $color-default-white;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 275px);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.form__item {
+  width: 100%;
+}
+
+.form__item input {
+  padding: 15px;
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+
+  &::placeholder {
+    font-family: $ff-pt-mono;
+    font-size: 16px;
+    line-height: 1.375;
+    color: $color-default-white;
+  }
+}
+
+.form__item textarea {
+  width: 100%;
+  padding: 24px 15px 22px;
+  border: none;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 1.375;
+  color: $color-default-white;
+
+  &::placeholder {
+    font-family: $ff-pt-mono;
+    font-size: 16px;
+    line-height: 1.375;
+    color: $color-default-white;
+  }
+}
+
+.form__item--textarea {
+  grid-column: 1 / -1;
+}
+
+.form__item--textarea~li {
+  margin-top: 8px;
+}
+
+.form__item--checkbox label {
+  display: flex;
+  padding-left: 37px;
+  position: relative;
+}
+
+.form__item--checkbox input {
+  padding: 0;
+  min-height: auto;
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  background-color: inherit;
+  position: absolute;
+  left: 9px;
+  top: 47%;
+}
+
+.form__item--checkbox span {
+  padding-top: 15px;
+  font-family: $ff-pt-mono;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $color-default-white;
+  opacity: 0.8;
+}
+
+.form__item--checkbox svg {
+  fill: inherit;
+}
+
+.form__item--checkbox input:checked~svg {
+  position: absolute;
+  left: 12px;
+  top: 54%;
+  fill: $color-default-white;
+}
