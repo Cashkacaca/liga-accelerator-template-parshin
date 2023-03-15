@@ -1863,14 +1863,15 @@ button,
 }
 
 .form__item--checkbox svg {
-  fill: inherit;
+  opacity: 0;
 }
 
 .form__item--checkbox input:checked ~ svg {
   position: absolute;
+  opacity: 1;
   left: 12px;
   top: 54%;
-  fill: #ffffff;
+  color: #00B3FF;
 }
 
 .feedback {
@@ -1899,6 +1900,121 @@ button,
   position: absolute;
   left: 0;
   top: 19%;
+}
+
+.footer {
+  background-color: #041827;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 50px 0 55px;
+}
+
+.footer__partitions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 500px 1fr;
+  grid-template-columns: 1fr 500px 1fr;
+}
+
+.social__logo-wrap {
+  margin-bottom: 35px;
+}
+
+.social__network {
+  max-width: 140px;
+  margin: 0 0 0 15px;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.site-map {
+  padding: 6px 14px 0;
+}
+
+.site-map__heading {
+  margin: 0 0 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.07;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.site-map__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.site-map__item {
+  width: 100%;
+  margin: 0 26px 6px 0;
+  max-width: 220px;
+}
+
+.site-map__item a {
+  white-space: normal;
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.address__heading {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.07;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.address__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.address__item p {
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 1.56;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* @mixin hover-focus {

@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Smart Device" content="Производство и монтаж печатных плат и комплектующих.">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -256,7 +256,7 @@
 
                   <li class="form__item form__item--checkbox">
                     <label class="form__label">
-                      <input type="checkbox" name="consent" value="consent" checked="checked">
+                      <input type="checkbox" name="consent" value="consent">
                       <span>Я согласен на обработку персональных данных</span>
                       <svg width="9" height="6">
                         <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
@@ -272,44 +272,108 @@
         </div>
       </section>
 
-      <section class="intro">
-        <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-        </div>
-      </section>
-
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__wrap">
+        <div class="footer__wrapper">
 
           <ul class="footer__partitions">
+            <h3 class="visually-hidden">Социальные сети.</h3>
 
             <li class="footer__partittion social">
-              <div class="social__logo"></div>
+
+              <div class="social__logo-wrap">
+                <a class="social__logo" href="index.html" aria-label="Smart Device">
+                  <picture>
+                    <!-- <source type="image/svg+xml" media="(min-width: 1280px)" srcset="img/logo.svg#desctop">
+                      <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo.svg#tablet"> -->
+                    <img src="img/svg/logo-smart-device-desctop.svg" width="215" height="55" alt="Smart Device">
+                  </picture>
+                </a>
+
+              </div>
+
               <ul class="social__network">
                 <li class="social__network-item ok">
                   <span class="visually-hidden">Одноклассник</span>
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                  </svg>
                 </li>
                 <li class="social__network-item vk">
                   <span class="visually-hidden">Вконтакте</span>
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
                 </li>
                 <li class="social__network-item pinterest">
                   <span class="visually-hidden">Pinterest</span>
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#pinterest"></use>
+                  </svg>
                 </li>
               </ul>
             </li>
 
             <li class="footer__partittion site-map">
+              <h3 class="site-map__heading">Разделы сайта</h3>
+
+              <ul class="site-map__list">
+
+                <li class="site-map__item">
+                  <a href="#">О Компании</a>
+                </li>
+
+                <li class="site-map__item">
+                  <a href="#">Продукты</a>
+                </li>
+
+                <li class="site-map__item">
+                  <a href="#">Производство печатных плат</a>
+                </li>
+
+                <li class="site-map__item">
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+
+                <li class="site-map__item">
+                  <a href="#">Комплектующие</a>
+                </li>
+
+                <li class="site-map__item">
+                  <a href="#">Доставка</a>
+                </li>
+
+                <li class="site-map__item">
+                  <a href="#">Контакты</a>
+                </li>
+
+              </ul>
             </li>
 
-            <li class="footer__partittion info">
+            <li class="footer__partittion address">
+              <h3 class="address__heading">Наш офис</h3>
+
+              <ul class="address__list">
+
+                <li class="address__item">
+                  <p>г. Мытищи, Олимпийский проспект, д.10</p>
+                </li>
+
+                <li class="address__item">
+                  <p>+7 (495) 589-40-50</p>
+                </li>
+
+                <li class="address__item">
+                  <p>+7 (925) 389-58-29</p>
+                </li>
+
+                <li class="address__item">
+                  <p>+7 (925) 364-78-13</p>
+                </li>
+
+              </ul>
             </li>
 
           </ul>
@@ -318,6 +382,17 @@
       </div>
     </footer>
   </div>
+
+  <section class="intro">
+    <div class="container">
+      <h1>Тестовая страница.</h1>
+      <p>На данной странице показан пример модальных окон.</p>
+      <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+      </p>
+      <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+      <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+    </div>
+  </section>
 
   <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">

@@ -109,12 +109,13 @@
 }
 
 .form__item--checkbox svg {
-  fill: inherit;
+  opacity: 0;
 }
 
 .form__item--checkbox input:checked~svg {
   position: absolute;
+  opacity: 1;
   left: 12px;
   top: 54%;
-  fill: $color-default-white;
+  color: #00B3FF;
 }
