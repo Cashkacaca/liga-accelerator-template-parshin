@@ -11,6 +11,12 @@
   font-size: 36px;
   line-height: 1.42;
   color: $color-default-white;
+
+  &--modal {
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 1.406;
+  }
 }
 
 .form__description {
@@ -30,6 +36,11 @@
   grid-template-columns: repeat(2, 275px);
   column-gap: 30px;
   row-gap: 20px;
+
+  &--modal {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form__item {
@@ -79,6 +90,10 @@
   margin-top: 8px;
 }
 
+.form__item--textarea-modal~li {
+  margin-top: 0;
+}
+
 .form__item--checkbox label {
   display: flex;
   padding-left: 37px;
@@ -99,6 +114,11 @@
   top: 47%;
 }
 
+.form__item--checkbox-modal input {
+  left: 10px;
+  top: -11%;
+}
+
 .form__item--checkbox span {
   padding-top: 15px;
   font-family: $ff-pt-mono;
@@ -106,6 +126,10 @@
   line-height: 1.14;
   color: $color-default-white;
   opacity: 0.8;
+}
+
+.form__item--checkbox-modal span {
+  padding-top: 0;
 }
 
 .form__item--checkbox svg {
@@ -118,4 +142,8 @@
   left: 12px;
   top: 54%;
   color: #00B3FF;
+}
+
+.form__item--checkbox-modal input:checked~svg {
+  top: 13%;
 }

@@ -743,6 +743,10 @@ button,
   color: #ffffff;
 }
 
+.btn--form-modal {
+  max-width: none;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -759,7 +763,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -794,7 +798,7 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 60px 40px;
+  padding: 146px 40px 60px;
 }
 
 .modal__overlay {
@@ -808,20 +812,21 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
+  width: 500px;
+  padding: 37px 40px 46px;
+  background-color: #00B3FF;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 17px;
+  right: 14px;
   z-index: 1;
   width: 40px;
   height: 40px;
   padding: 0;
   background: rgba(255, 255, 255, 0);
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -1703,6 +1708,12 @@ button,
   color: #ffffff;
 }
 
+.form__heading--modal {
+  margin-bottom: 5px;
+  font-size: 30px;
+  line-height: 1.406;
+}
+
 .form__description {
   margin: 0 0 35px;
   font-family: "PT Mono", monospace;
@@ -1724,6 +1735,16 @@ button,
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: 20px;
+}
+
+.form__list--modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .form__item {
@@ -1829,6 +1850,10 @@ button,
   margin-top: 8px;
 }
 
+.form__item--textarea-modal ~ li {
+  margin-top: 0;
+}
+
 .form__item--checkbox label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1853,6 +1878,11 @@ button,
   top: 47%;
 }
 
+.form__item--checkbox-modal input {
+  left: 10px;
+  top: -11%;
+}
+
 .form__item--checkbox span {
   padding-top: 15px;
   font-family: "PT Mono", monospace;
@@ -1860,6 +1890,10 @@ button,
   line-height: 1.14;
   color: #ffffff;
   opacity: 0.8;
+}
+
+.form__item--checkbox-modal span {
+  padding-top: 0;
 }
 
 .form__item--checkbox svg {
@@ -1872,6 +1906,10 @@ button,
   left: 12px;
   top: 54%;
   color: #00B3FF;
+}
+
+.form__item--checkbox-modal input:checked ~ svg {
+  top: 13%;
 }
 
 .feedback {
@@ -1910,7 +1948,7 @@ button,
 .footer__wrapper {
   margin: 0 auto;
   max-width: 1220px;
-  padding: 50px 0 55px;
+  padding: 50px 0 44px;
 }
 
 .footer__partitions {
@@ -1957,11 +1995,20 @@ button,
   color: #ffffff;
 }
 
+.site-map__list-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
 .site-map__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1971,17 +2018,11 @@ button,
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .site-map__item {
   width: 100%;
-  margin: 0 26px 6px 0;
+  margin: 0 0 6px;
   max-width: 220px;
 }
 
@@ -1993,8 +2034,12 @@ button,
   color: rgba(255, 255, 255, 0.7);
 }
 
+.address {
+  padding: 6px 14px 0;
+}
+
 .address__heading {
-  margin: 0;
+  margin: 0 0 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -2010,11 +2055,33 @@ button,
   list-style-type: none;
 }
 
+.address__item {
+  width: 100%;
+  margin: 0 0 5px;
+  max-width: 350px;
+}
+
 .address__item p {
+  margin: 0;
   font-family: "PT Mono", monospace;
   font-size: 16px;
   line-height: 1.56;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.address {
+  padding: 6px 14px 0;
+}
+
+.address__heading {
+  margin: 0 0 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.07;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* @mixin hover-focus {

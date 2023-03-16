@@ -13,25 +13,24 @@
   color: $color-default-white;
 }
 
+.site-map__list-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
 .site-map__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-height: 170px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: start;
-  justify-content: flex-end;
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // column-gap: 30px;
-  // row-gap: 10px;
 }
 
 .site-map__item {
   width: 100%;
-  margin: 0 26px 6px 0;
+  margin: 0 0 6px;
   max-width: 220px;
 }
 

@@ -45,7 +45,8 @@
 
               </ul>
 
-              <button class="info-communication__order btn btn--order" type="button">Заказать звонок</button>
+              <button class="info-communication__order btn btn--order" type="button" data-open-modal="feedback">Заказать
+                звонок</button>
             </div>
           </div>
 
@@ -256,7 +257,7 @@
 
                   <li class="form__item form__item--checkbox">
                     <label class="form__label">
-                      <input type="checkbox" name="consent" value="consent">
+                      <input type="checkbox" name="consent" value="consent" checked>
                       <span>Я согласен на обработку персональных данных</span>
                       <svg width="9" height="6">
                         <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
@@ -318,38 +319,45 @@
 
             <li class="footer__partittion site-map">
               <h3 class="site-map__heading">Разделы сайта</h3>
+              <div class="site-map__list-wrap">
 
-              <ul class="site-map__list">
+                <ul class="site-map__list">
 
-                <li class="site-map__item">
-                  <a href="#">О Компании</a>
-                </li>
+                  <li class="site-map__item">
+                    <a href="#">О Компании</a>
+                  </li>
 
-                <li class="site-map__item">
-                  <a href="#">Продукты</a>
-                </li>
+                  <li class="site-map__item">
+                    <a href="#">Продукты</a>
+                  </li>
 
-                <li class="site-map__item">
-                  <a href="#">Производство печатных плат</a>
-                </li>
+                  <li class="site-map__item">
+                    <a href="#">Производство печатных плат</a>
+                  </li>
 
-                <li class="site-map__item">
-                  <a href="#">Монтаж печатных плат</a>
-                </li>
+                  <li class="site-map__item">
+                    <a href="#">Монтаж печатных плат</a>
+                  </li>
 
-                <li class="site-map__item">
-                  <a href="#">Комплектующие</a>
-                </li>
+                </ul>
+                <ul class="site-map__list">
 
-                <li class="site-map__item">
-                  <a href="#">Доставка</a>
-                </li>
+                  <li class="site-map__item">
+                    <a href="#">Комплектующие</a>
+                  </li>
 
-                <li class="site-map__item">
-                  <a href="#">Контакты</a>
-                </li>
+                  <li class="site-map__item">
+                    <a href="#">Доставка</a>
+                  </li>
 
-              </ul>
+                  <li class="site-map__item">
+                    <a href="#">Контакты</a>
+                  </li>
+
+                </ul>
+
+
+              </div>
             </li>
 
             <li class="footer__partittion address">
@@ -381,8 +389,10 @@
         </div>
       </div>
     </footer>
+
   </div>
 
+  <!--
   <section class="intro">
     <div class="container">
       <h1>Тестовая страница.</h1>
@@ -395,7 +405,7 @@
   </section>
 
   <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
+  <!-- <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -421,7 +431,67 @@
         </button>
       </div>
     </div>
+  </div>  -->
+
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="form__heading form__heading--modal">Закажите звонок</legend>
+
+            <p class="form__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+            <ul class="form__list form__list--modal">
+
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="visually-hidden">Имя</span>
+                  <input type="text" name="name-modal" placeholder="Имя" required>
+                </label>
+              </li>
+
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="visually-hidden">Телефон</span>
+                  <input type="tel" name="phone-modal" placeholder="Телефон" required data-validate-type="phone">
+                </label>
+              </li>
+
+              <li class="form__item form__item--textarea form__item--textarea-modal">
+                <textarea name="question" id="question" cols="35" rows="5" placeholder="Ваш вопрос"></textarea>
+              </li>
+
+              <li class="form__item form__item--button">
+                <button class="btn btn--form btn--form-modal" type="submit">Отправить</button>
+              </li>
+
+              <li class="form__item form__item--checkbox form__item--checkbox-modal">
+                <label class="form__label">
+                  <input type="checkbox" name="consent-phone" value="consent" checked>
+                  <span>Я согласен на обработку персональных данных</span>
+                  <svg width="9" height="6">
+                    <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
+                  </svg>
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+        </form>
+
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
+
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
