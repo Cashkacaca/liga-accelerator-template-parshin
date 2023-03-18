@@ -5,11 +5,28 @@
 .history__wrap {
   margin: 0 auto;
   max-width: 1220px;
-  padding: 60px 0 100px ;
+  padding: 60px 0 100px;
   display: grid;
-  grid-template-columns: 150px 1fr;
-  column-gap: 100px;
+  grid-template-columns: 170px 1fr;
+  column-gap: 80px;
 
+  @include vp-1023 {
+    padding: 15px 0 76px;
+    column-gap: 30px;
+  }
+}
+
+.history__image img {
+  @include vp-1023 {
+    margin-left: auto;
+  }
+
+}
+
+.history__text-wrap {
+  @include vp-1023 {
+    padding-right: 24px;
+  }
 }
 
 .history__heading {
@@ -35,4 +52,12 @@
 
 .history__text--hidden {
   display: none;
+}
+
+.history__button {
+  margin-top: 40px;
+
+  @include vp-1023 {
+    margin-top: 19px;
+  }
 }

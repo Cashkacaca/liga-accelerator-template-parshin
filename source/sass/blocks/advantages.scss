@@ -24,6 +24,6 @@
   row-gap: 30px;
 
   @include vp-1023 {
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }

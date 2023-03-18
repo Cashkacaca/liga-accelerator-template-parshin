@@ -1,5 +1,10 @@
 .address {
   padding: 6px 14px 0;
+
+  @include vp-1023 {
+    grid-column: -1 / -2;
+    padding-right: 12px;
+  }
 }
 
 .address__heading {

@@ -6,15 +6,17 @@
   background: url('../img/main-background.jpg') no-repeat center / cover;
 
   @include retina {
-    background-image: url("../img/main-background@2x.jpg");
+    @include vp-1023 {
+      background-image: url("../img/main-background-tablet@2x.jpg");
+    }
+
+    @media (min-width: $vp-1024) {
+      background-image: url("../img/main-background@2x.jpg");
+    }
   }
 
   @include vp-1023 {
     background: url('../img/main-background-tablet.jpg') no-repeat center / cover;
-
-    @include retina {
-      background-image: url("../img/main-background-tablet@2x.jpg");
-    }
   }
 }
 

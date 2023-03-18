@@ -54,7 +54,6 @@
 .btn--unwrap {
   display: block;
   min-width: 180px;
-  margin-top: 40px;
   padding: 12px 4px 15px;
   background-color: inherit;
   border: 1px solid #00B2FF;
@@ -74,6 +73,10 @@
   min-height: 60px;
   background: #00B2FF;
   border-radius: 3px 0 0 0;
+
+  & svg {
+    color: #00B2FF;
+  }
 }
 
 .btn--form {

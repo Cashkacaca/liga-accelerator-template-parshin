@@ -137,15 +137,15 @@
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">  -->
-                <source type="image/webp" srcset="img/2022.webp 1x, img/2022@2x.webp 2x">
-
                 <!--   <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x"> -->
+
+                <!-- <source type="image/webp" srcset="img/2022.webp 1x, img/2022@2x.webp 2x"> -->
                 <img class="advantages-present__images" src="img/2022.png" srcset="img/2022@2x.png 2x" width="150"
                   height="320" alt="2022 год.">
               </picture>
             </div>
-            <div class="history__text">
+            <div class="history__text-wrap">
               <h2 class="history__heading">О компании</h2>
 
               <p class="history__text">Мы поставляем электронные комплектующие, производим печатные платы и
@@ -303,6 +303,7 @@
               </div>
 
               <ul class="social__network">
+
                 <li class="social__network-item ok">
                   <span class="visually-hidden">Одноклассник</span>
                   <svg width="30" height="30">
@@ -442,7 +443,7 @@
 
 
   <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
+  <div class="modal modal--preload is-active" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">

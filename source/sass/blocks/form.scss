@@ -17,6 +17,10 @@
     font-size: 30px;
     line-height: 1.406;
   }
+
+  @include vp-1023 {
+    margin-bottom: 6px;
+  }
 }
 
 .form__description {
@@ -26,6 +30,10 @@
   font-size: 16px;
   line-height: 1.375;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
 }
 
 .form__list {
@@ -40,6 +48,10 @@
   &--modal {
     display: flex;
     flex-direction: column;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
   }
 }
 
@@ -80,6 +92,10 @@
     line-height: 1.375;
     color: $color-default-white;
   }
+
+  @include vp-1023 {
+    padding: 29px 15px 16px;
+  }
 }
 
 .form__item--textarea {
@@ -94,10 +110,20 @@
   margin-top: 0;
 }
 
+.form__item--textarea~.form__item--checkbox {
+  @include vp-1023 {
+    margin-top: 3px;
+  }
+}
+
 .form__item--checkbox label {
   display: flex;
   padding-left: 37px;
   position: relative;
+
+  @include vp-1023 {
+    padding-left: 26px;
+  }
 }
 
 .form__item--checkbox input {
@@ -112,6 +138,10 @@
   position: absolute;
   left: 9px;
   top: 47%;
+
+  @include vp-1023 {
+    left: 0;
+  }
 }
 
 .form__item--checkbox-modal input {
@@ -142,8 +172,18 @@
   left: 12px;
   top: 54%;
   color: #00B3FF;
+
+  @include vp-1023 {
+    left: 2px;
+    top: 57%;
+  }
 }
 
+// модальное окно
 .form__item--checkbox-modal input:checked~svg {
   top: 13%;
+
+  @include vp-1023 {
+    top: 13%;
+  }
 }

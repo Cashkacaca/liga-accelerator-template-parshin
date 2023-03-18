@@ -7,6 +7,10 @@
   margin: 0 auto;
   max-width: 1220px;
   padding: 50px 0 44px;
+
+  @include vp-1023 {
+    padding: 50px 26px 54px 12px;
+  }
 }
 
 .footer__partitions {
@@ -15,5 +19,15 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
-  // column-gap: 40px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+}
+
+.footer__partittion {
+  @include vp-1023 {
+    grid-column: 1 / -1;
+  }
 }

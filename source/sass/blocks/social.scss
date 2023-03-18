@@ -1,13 +1,42 @@
+.social {
+  @include vp-1023 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .social__logo-wrap {
   margin-bottom: 35px;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+    padding-left: 14px;
+  }
 }
 
 .social__network {
   max-width: 140px;
-  margin: 0 0 0 15px;;
+  margin: 0 0 0 15px;
+  ;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include vp-1023 {
+    max-width: 64%;
+  }
+}
+
+.social__network-item {
+  @include vp-1023 {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
