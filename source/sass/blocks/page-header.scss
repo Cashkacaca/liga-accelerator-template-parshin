@@ -31,6 +31,10 @@
   @include vp-1023 {
     padding: 20px 26px;
   }
+
+  @include vp-767 {
+    padding: 15px 10px 21px;
+  }
 }
 
 .page-header__top {
@@ -47,8 +51,19 @@
   }
 }
 
+.page-header__logo {
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .page-header__info {
   @include vp-1023 {
     margin-right: 15px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
   }
 }

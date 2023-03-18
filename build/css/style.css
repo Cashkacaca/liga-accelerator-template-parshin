@@ -2239,7 +2239,7 @@ html {
   .leading__heading {
     margin-bottom: 1px;
     font-size: 64px;
-    line-height: 75px;
+    line-height: 1.17;
   }
 
   .leading__description {
@@ -2389,6 +2389,16 @@ html {
     column-gap: 16px;
   }
 
+  .footer__partitions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .footer__partittion {
     grid-column: 1/-1;
   }
@@ -2479,6 +2489,45 @@ html {
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .page-header__inner {
+    padding: 15px 10px 21px;
+  }
+
+  .page-header__logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .page-header__info {
+    margin-right: 0;
+  }
+
+  .info-communication {
+    padding-right: 4px;
+  }
+
+  .info-communication__link {
+    padding: 4px 0 10px;
+  }
+
+  .leading__heading {
+    font-size: 36px;
+    line-height: 1.167;
+  }
+
+  .advantages__cards {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+
+  .history__image {
+    display: none;
+  }
+
+  .form__list {
+    -ms-grid-columns: minmax(270px, 1fr);
+    grid-template-columns: minmax(270px, 1fr);
   }
 }
 
