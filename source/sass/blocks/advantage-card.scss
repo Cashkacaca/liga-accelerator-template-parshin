@@ -24,6 +24,11 @@
     min-height: 360px;
     padding-bottom: 32px;
   }
+
+  @include vp-767 {
+    min-height: 325px;
+    padding: 26px 29px 74px;
+  }
 }
 
 .advantage-card__icon {
@@ -52,6 +57,10 @@
   @include vp-1023 {
     margin-bottom: 9px;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+  }
 }
 
 .advantage-card:hover .advantage-card__title {
@@ -62,9 +71,13 @@
   margin: 0;
   font-family: $ff-pt-mono;
   font-weight: 400;
-  font-size: 1.35;
-  line-height: 135%;
+  font-size: 16px;
+  line-height: 1.35;
   color: #041827;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
 }
 
 .advantage-card:hover .advantage-card__description {

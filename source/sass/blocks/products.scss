@@ -11,6 +11,10 @@
   @include vp-1023 {
     padding: 56px 26px 75px;
   }
+
+  @include vp-767 {
+    padding: 47px 9px 86px;
+  }
 }
 
 .products__heading {
@@ -22,6 +26,24 @@
 
   @include vp-1023 {
     margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.406;
+  }
+}
+
+.products__heading--not-mobile {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.products__heading--for-mobile {
+  @media (min-width: $vp-768) {
+    display: none;
   }
 }
 
@@ -114,12 +136,21 @@
   @include vp-1023 {
     padding: 38px 80px 70px 45px;
   }
+
+  @include vp-767 {
+    padding: 26px 80px 70px 30px;
+  }
 }
 
 .products__card-text {
   font-size: 20px;
   line-height: 1.5;
   color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .products__card-button {

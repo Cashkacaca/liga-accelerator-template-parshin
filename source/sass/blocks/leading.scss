@@ -6,6 +6,10 @@
   background: url('../img/main-background.jpg') no-repeat center / cover;
 
   @include retina {
+    @include vp-767 {
+      background: url('../img/main-background-mobil@2x.jpg') no-repeat center / cover;
+    }
+
     @include vp-1023 {
       background-image: url("../img/main-background-tablet@2x.jpg");
     }
@@ -18,6 +22,10 @@
   @include vp-1023 {
     background: url('../img/main-background-tablet.jpg') no-repeat center / cover;
   }
+
+  @include vp-767 {
+    background: url('../img/main-background-mobil.jpg') no-repeat center / cover;
+  }
 }
 
 .leading__wrapper {
@@ -25,6 +33,10 @@
 
   @include vp-1023 {
     padding: 119px 0 205px 26px;
+  }
+
+  @include vp-767 {
+    padding: 90px 9px 190px;
   }
 }
 
@@ -44,6 +56,7 @@
   }
 
   @include vp-767 {
+    margin-bottom: 8px;
     font-size: 36px;
     line-height: 1.167;
   }
@@ -60,10 +73,40 @@
   @include vp-1023 {
     margin-bottom: 57px;
   }
+
+  @include vp-767 {
+    margin-bottom: 45px;
+    font-size: 14px;
+  }
 }
 
 .leading__consulation {
   @include vp-1023 {
     margin-left: 45px;
+  }
+
+  @include vp-767 {
+    margin: 0 1px 0 0;
+  }
+}
+
+.leading__button-text--not-mobile {
+  @include vp-1023 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.leading__button-text--for-mobile {
+  @include vp-1023 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+    margin: 0 auto;
   }
 }

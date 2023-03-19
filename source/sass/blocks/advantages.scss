@@ -11,6 +11,9 @@
     padding: 80px 22px 60px;
   }
 
+  @include vp-767 {
+    padding: 50px 9px 40px;
+  }
 }
 
 .advantages__cards {

@@ -21,6 +21,11 @@
   @include vp-1023 {
     margin-bottom: 6px;
   }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 1.406;
+  }
 }
 
 .form__description {
@@ -33,6 +38,12 @@
 
   @include vp-1023 {
     margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 1.344;
   }
 }
 
@@ -100,6 +111,10 @@
   @include vp-1023 {
     padding: 29px 15px 16px;
   }
+
+  @include vp-767 {
+    padding: 23px 15px 48px;
+  }
 }
 
 .form__item--textarea {
@@ -108,6 +123,10 @@
 
 .form__item--textarea~li {
   margin-top: 8px;
+
+  @include vp-767 {
+    margin-top: 2px;
+  }
 }
 
 .form__item--textarea-modal~li {
@@ -118,6 +137,10 @@
   @include vp-1023 {
     margin-top: 3px;
   }
+
+  @include vp-767 {
+    margin-top: -10px;
+  }
 }
 
 .form__item--checkbox label {
@@ -127,6 +150,10 @@
 
   @include vp-1023 {
     padding-left: 26px;
+  }
+
+  @include vp-767 {
+    padding-left: 30px;
   }
 }
 
@@ -145,6 +172,10 @@
 
   @include vp-1023 {
     left: 0;
+  }
+
+  @include vp-767 {
+    left: 5px;
   }
 }
 
@@ -180,6 +211,10 @@
   @include vp-1023 {
     left: 2px;
     top: 57%;
+  }
+
+  @include vp-767 {
+    left: 7px;
   }
 }
 

@@ -5,6 +5,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @include vp-767 {
+    padding-bottom: 23px;
+    flex-direction: column;
+  }
 }
 
 .social__logo-wrap {
@@ -14,12 +19,15 @@
     margin-bottom: 0;
     padding-left: 14px;
   }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
 }
 
 .social__network {
   max-width: 140px;
   margin: 0 0 0 15px;
-  ;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -28,6 +36,10 @@
 
   @include vp-1023 {
     max-width: 64%;
+  }
+
+  @include vp-767 {
+    margin-left: 20px;
   }
 }
 
