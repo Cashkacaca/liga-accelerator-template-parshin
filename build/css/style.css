@@ -2184,6 +2184,10 @@ html {
     left: 0;
   }
 
+  .leading__button-text--for-mobile {
+    display: none;
+  }
+
   .footer__partittion-button {
     display: none;
   }
@@ -2289,10 +2293,6 @@ html {
 
   .leading__button-text--not-mobile {
     display: block;
-  }
-
-  .leading__button-text--for-mobile {
-    display: none;
   }
 
   .advantages__wrapper {
