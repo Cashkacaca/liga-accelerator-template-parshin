@@ -30,6 +30,7 @@
 
   @include vp-767 {
     margin-bottom: 28px;
+    padding-right: 8px;
     font-size: 28px;
     line-height: 1.406;
   }
@@ -76,6 +77,10 @@
   background: url('../img/products/product-1.jpg') no-repeat center / cover;
 
   @include retina {
+    @include vp-767 {
+      background: url('../img/products/product-1-mobil@2x.jpg') no-repeat center / cover;
+    }
+
 
     @include vp-1023 {
       background-image: url("../img/products/product-1-tablet@2x.jpg");
@@ -89,12 +94,20 @@
   @include vp-1023 {
     background: url('../img/products/product-1-tablet.jpg') no-repeat center / cover;
   }
+
+  @include vp-767 {
+    background: url('../img/products/product-1-mobil.jpg') no-repeat center / cover;
+  }
 }
 
 .products__card--montage {
   background: url('../img/products/product-2.jpg') no-repeat center / cover;
 
   @include retina {
+    @include vp-767 {
+      background: url('../img/products/product-2-mobil@2x.jpg') no-repeat center / cover;
+    }
+
     @include vp-1023 {
       background-image: url("../img/products/product-2-tablet@2x.jpg");
     }
@@ -107,12 +120,20 @@
   @include vp-1023 {
     background: url('../img/products/product-2-tablet.jpg') no-repeat center / cover;
   }
+
+  @include vp-767 {
+    background: url('../img/products/product-2-mobil.jpg') no-repeat center / cover;
+  }
 }
 
 .products__card--lighting {
   background: url('../img/products/product-3.jpg') no-repeat center / cover;
 
   @include retina {
+    @include vp-767 {
+      background: url('../img/products/product-3-mobil@2x.jpg') no-repeat center / cover;
+    }
+
     @include vp-1023 {
       background-image: url("../img/products/product-3-tablet@2x.jpg");
     }
@@ -124,6 +145,10 @@
 
   @include vp-1023 {
     background: url('../img/products/product-3-tablet.jpg') no-repeat center / cover;
+  }
+
+  @include vp-767 {
+    background: url('../img/products/product-3-mobil.jpg') no-repeat center / cover;
   }
 }
 
