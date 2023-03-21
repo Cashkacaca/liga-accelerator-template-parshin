@@ -2,6 +2,20 @@
 // const baseSuccessCallback = (event) => {
 //   event.preventDefault();
 //   // В данном колбеке бэкендер, либо разработчик при необходимости будет писать запрос на отправку формы на сервер и обрабатывать возможные ошибки или успешную отправку формы на сервер
+
+//   // мой код
+//   // // fetch('https://echo.htmlacademy.ru/');
+//   // const form = document.querySelector('.feedback__form');
+//   // // form указывает на форму
+
+//   // let params = new FormData(form);
+
+//   // fetch('https://echo.htmlacademy.ru/', {
+//   //   method: 'POST',
+//   //   body: params,
+//   // });
+
+
 // };
 
 const baseErrorCallback = (event) => {

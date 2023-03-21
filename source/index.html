@@ -246,9 +246,9 @@
 
                 <ul class="form__list">
 
-                  <li class="form__item" data-validate-type="text" , data-limitation="name" ,
-                    data-message-base="Поле обязательно к заполнению" ,
-                    data-message-extra="Проверьте корректность заполнения поля" , data-required>
+                  <li class="form__item" data-validate-type="text" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля" data-required>
                     <label class="form__label">
                       <span class="visually-hidden">Имя</span>
                       <input type="text" name="name" placeholder="Имя" required>
@@ -273,7 +273,7 @@
                     <button class="btn btn--form" type="submit">Задать вопрос</button>
                   </li>
 
-                  <li class="form__item form__item--checkbox" data-validate-type="checkbox" ,
+                  <li class="form__item form__item--checkbox" data-validate-type="checkbox"
                     data-message-base="Поле обязательно к заполнению">
                     <label class="form__label">
                       <input type="checkbox" name="consent" value="consent" checked>
@@ -428,19 +428,19 @@
 
             <ul class="form__list form__list--modal">
 
-              <li class="form__item" data-validate-type="text" , data-limitation="name" ,
-                data-message-base="Поле обязательно к заполнению" ,
-                data-message-extra="Проверьте корректность заполнения поля" , data-required>
+              <li class="form__item" data-validate-type="text" data-limitation="name"
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <label class="form__label">
                   <span class="visually-hidden">Имя</span>
-                  <input type="text" name="name-modal" placeholder="Имя" required>
+                  <input type="text" name="name-modal" placeholder="Имя" required tabindex="1" data-focus>
                 </label>
               </li>
 
-              <li class="form__item" data-validate-type="phone" , data-on-input-validate,
-                data-message-base="Поле обязательно к заполнению" ,
-                data-message-extra="Проверьте корректность заполнения поля" ,
-                data-message-success="Поле заполнено верно" , data-required>
+              <li class="form__item" data-validate-type="phone" data-on-input-validate
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+                data-required>
                 <label class="form__label">
                   <span class="visually-hidden">Телефон</span>
                   <input type="tel" name="phone-modal" placeholder="Телефон" required data-validate-type="phone">
@@ -455,7 +455,7 @@
                 <button class="btn btn--form btn--form-modal" type="submit">Отправить</button>
               </li>
 
-              <li class="form__item form__item--checkbox form__item--checkbox-modal" data-validate-type="checkbox" ,
+              <li class="form__item form__item--checkbox form__item--checkbox-modal" data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению">
                 <label class="form__label">
                   <input type="checkbox" name="consent-phone" value="consent" checked>
