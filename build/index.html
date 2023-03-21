@@ -443,22 +443,22 @@
                 data-required>
                 <label class="form__label">
                   <span class="visually-hidden">Телефон</span>
-                  <input type="tel" name="phone-modal" placeholder="Телефон" required>
+                  <input type="tel" name="phone-modal" placeholder="Телефон" required tabindex="2">
                 </label>
               </li>
 
               <li class="form__item form__item--textarea form__item--textarea-modal" data-validate-type="text">
-                <textarea name="question" id="question" cols="35" rows="5" placeholder="Ваш вопрос"></textarea>
+                <textarea name="question" id="question" cols="35" rows="5" placeholder="Ваш вопрос" tabindex="3"></textarea>
               </li>
 
               <li class="form__item form__item--button">
-                <button class="btn btn--form btn--form-modal" type="submit">Отправить</button>
+                <button class="btn btn--form btn--form-modal" type="submit" tabindex="5">Отправить</button>
               </li>
 
               <li class="form__item form__item--checkbox form__item--checkbox-modal" data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <label class="form__label">
-                  <input type="checkbox" name="consent-phone" value="consent" checked required>
+                  <input type="checkbox" name="consent-phone" value="consent" checked required tabindex="4">
                   <span>Я согласен на обработку персональных данных</span>
                   <svg width="9" height="6">
                     <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
@@ -470,7 +470,7 @@
           </fieldset>
         </form>
 
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal tabindex="6">
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
