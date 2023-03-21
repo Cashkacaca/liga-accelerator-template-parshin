@@ -14,8 +14,7 @@ const clean = () => del('build');
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'index.html',
-    // index: 'sitemap.html',
+    index: 'sitemap.html',
     notify: false,
     open: true,
     cors: true,

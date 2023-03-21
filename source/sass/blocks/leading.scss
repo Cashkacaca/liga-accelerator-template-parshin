@@ -101,7 +101,7 @@
 }
 
 .leading__button-text--for-mobile {
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-768) {
     display: none;
   }
 
