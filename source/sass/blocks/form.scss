@@ -180,8 +180,8 @@
 }
 
 .form__item--checkbox-modal input {
-  left: 10px;
-  top: -11%;
+  top: 0;
+  margin: auto;
 }
 
 .form__item--checkbox span {
@@ -220,9 +220,9 @@
 
 // модальное окно
 .form__item--checkbox-modal input:checked~svg {
-  top: 13%;
+  top: 17%;
 
   @include vp-1023 {
-    top: 13%;
+    top: 17%;
   }
 }

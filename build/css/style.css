@@ -1957,8 +1957,8 @@ html {
 }
 
 .form__item--checkbox-modal input {
-  left: 10px;
-  top: -11%;
+  top: 0;
+  margin: auto;
 }
 
 .form__item--checkbox span {
@@ -1987,7 +1987,7 @@ html {
 }
 
 .form__item--checkbox-modal input:checked ~ svg {
-  top: 13%;
+  top: 17%;
 }
 
 .feedback {
@@ -2475,7 +2475,7 @@ html {
   }
 
   .form__item--checkbox-modal input:checked ~ svg {
-    top: 13%;
+    top: 17%;
   }
 
   .feedback {
