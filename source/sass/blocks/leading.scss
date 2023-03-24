@@ -1,5 +1,5 @@
 .leading {
-  margin-top: -60px;
+  margin-top: -13px;
   background: $color-default-black url("../img/main-background.jpg") no-repeat center / cover;
   color: #f2f5f7;
 
@@ -28,7 +28,7 @@
 }
 
 .leading__wrapper {
-  padding: 244px 0 280px 434px;
+  padding: 276px 0 280px 434px;
 
   @include vp-1023 {
     padding: 119px 0 205px 26px;
