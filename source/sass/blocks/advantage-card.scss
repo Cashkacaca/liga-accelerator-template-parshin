@@ -1,7 +1,7 @@
 .advantage-card {
   min-height: 300px;
   padding: 40px 45px 35px;
-  outline: 1px solid #EBEBEB;
+  outline: 1px solid #ebebeb;
   position: relative;
 
   &::before {
@@ -11,13 +11,13 @@
     top: 0;
     width: 5px;
     height: 100%;
-    background-color: #00B2FF;
+    background-color: #00b2ff;
   }
 
   &:hover {
     outline: none;
-    background-color: #00B2FF;
-    color: #F2F5F7;
+    background-color: #00b2ff;
+    color: #f2f5f7;
   }
 
   @include vp-1023 {
@@ -35,16 +35,15 @@
   margin-bottom: 20px;
   width: 35px;
   height: 35px;
-  stroke: #00B2FF;
+  stroke: #00b2ff;
 
   @include vp-1023 {
     margin-bottom: 16px;
   }
-
 }
 
 .advantage-card:hover .advantage-card__icon {
-  stroke: #F2F5F7;
+  stroke: #f2f5f7;
 }
 
 .advantage-card__title {
@@ -52,7 +51,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
-  color: #00B2FF;
+  color: #00b2ff;
 
   @include vp-1023 {
     margin-bottom: 9px;
@@ -64,7 +63,7 @@
 }
 
 .advantage-card:hover .advantage-card__title {
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .advantage-card__description {
@@ -81,5 +80,5 @@
 }
 
 .advantage-card:hover .advantage-card__description {
-  color: #F2F5F7;
+  color: #f2f5f7;
 }

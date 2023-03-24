@@ -5,8 +5,11 @@
 }
 
 .page-header__scroll {
-  background-color: $color-default-black;
-  background: url('../img/header-background.png') no-repeat center / cover;
+  background: linear-gradient(rgba(5, 24, 39, 1), rgba(5, 24, 39, 0)), url("../img/header-background.png") no-repeat center / cover;
+  // background-color: $color-default-black;
+  // background: url("../img/header-background.png") no-repeat center / cover;
+  // box-shadow: inset 0 15px 10px 0 #051827;
+
 
   @include retina {
     background-image: url("../img/header-background@2x.png");
@@ -18,7 +21,6 @@
     right: 0;
     left: 0;
   }
-
 }
 
 .page-header__inner {
@@ -49,9 +51,7 @@
   @include vp-1023 {
     margin-right: 20px;
   }
-}
 
-.page-header__logo {
   @include vp-767 {
     width: 35px;
     height: 35px;

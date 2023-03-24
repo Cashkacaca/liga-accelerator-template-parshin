@@ -28,7 +28,7 @@
 .btn--order {
   padding: 11px 15px;
   background-color: inherit;
-  border: 1px solid #F2F5F7;
+  border: 1px solid #f2f5f7;
   border-radius: 3px;
   font-weight: 700;
   font-size: 14px;
@@ -36,12 +36,12 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .btn--leading {
   padding: 16px 30px 18px 25px;
-  background: #00B2FF;
+  background: #00b2ff;
   border-radius: 3px;
   font-weight: 700;
   font-size: 18px;
@@ -54,7 +54,7 @@
     width: 100%;
     padding: 13px 30px 11px 25px;
     font-size: 14px;
-    line-height: 1.143;
+    line-height: 1.14;
   }
 }
 
@@ -63,16 +63,16 @@
   min-width: 180px;
   padding: 12px 4px 15px;
   background-color: inherit;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.143;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00B2FF;
+  color: #00b2ff;
 
   @include vp-767 {
     min-width: 160px;
@@ -83,11 +83,11 @@
 .btn--products {
   min-width: 60px;
   min-height: 60px;
-  background: #00B2FF;
+  background: #00b2ff;
   border-radius: 3px 0 0 0;
 
   & svg {
-    color: #00B2FF;
+    color: #00b2ff;
   }
 
   @include vp-767 {
@@ -108,7 +108,7 @@
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.188;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;

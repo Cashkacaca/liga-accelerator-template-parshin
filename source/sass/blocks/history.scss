@@ -1,5 +1,5 @@
 .history {
-  background-color: #F8FDFF;
+  background-color: #f8fdff;
 }
 
 .history__wrap {
@@ -54,7 +54,7 @@
 
   @include vp-767 {
     font-size: 28px;
-    line-height: 1.406;
+    line-height: 1.41;
   }
 }
 
@@ -63,12 +63,12 @@
   margin: 0 0 19px;
   font-family: $ff-pt-mono;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #041827;
 
   @include vp-767 {
     font-size: 14px;
-    line-height: 1.344;
+    line-height: 1.34;
   }
 }
 

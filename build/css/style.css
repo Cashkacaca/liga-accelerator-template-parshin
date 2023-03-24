@@ -732,7 +732,7 @@ html {
 .btn--order {
   padding: 11px 15px;
   background-color: inherit;
-  border: 1px solid #F2F5F7;
+  border: 1px solid #f2f5f7;
   border-radius: 3px;
   font-weight: 700;
   font-size: 14px;
@@ -740,12 +740,12 @@ html {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .btn--leading {
   padding: 16px 30px 18px 25px;
-  background: #00B2FF;
+  background: #00b2ff;
   border-radius: 3px;
   font-weight: 700;
   font-size: 18px;
@@ -760,27 +760,27 @@ html {
   min-width: 180px;
   padding: 12px 4px 15px;
   background-color: inherit;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.143;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .btn--products {
   min-width: 60px;
   min-height: 60px;
-  background: #00B2FF;
+  background: #00b2ff;
   border-radius: 3px 0 0 0;
 }
 
 .btn--products svg {
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .btn--form {
@@ -794,7 +794,7 @@ html {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.188;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -872,7 +872,7 @@ html {
   position: relative;
   width: 500px;
   padding: 37px 40px 46px;
-  background-color: #00B3FF;
+  background-color: #00b3ff;
 }
 
 .modal__close-btn {
@@ -1446,8 +1446,9 @@ html {
 }
 
 .page-header__scroll {
-  background-color: #000000;
-  background: url("../img/header-background.png") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(5, 24, 39)), to(rgba(5, 24, 39, 0))), url("../img/header-background.png") no-repeat center/cover;
+  background: -o-linear-gradient(rgb(5, 24, 39), rgba(5, 24, 39, 0)), url("../img/header-background.png") no-repeat center/cover;
+  background: linear-gradient(rgb(5, 24, 39), rgba(5, 24, 39, 0)), url("../img/header-background.png") no-repeat center/cover;
 }
 
 .page-header__inner {
@@ -1520,8 +1521,8 @@ html {
   width: 100%;
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.125;
-  color: #F2F5F7;
+  line-height: 1.13;
+  color: #f2f5f7;
 }
 
 .info-communication__icon {
@@ -1530,9 +1531,8 @@ html {
 
 .leading {
   margin-top: -60px;
-  background-color: #000000;
-  color: #F2F5F7;
-  background: url("../img/main-background.jpg") no-repeat center/cover;
+  background: #000000 url("../img/main-background.jpg") no-repeat center/cover;
+  color: #f2f5f7;
 }
 
 .leading__wrapper {
@@ -1541,10 +1541,10 @@ html {
 
 .leading__heading {
   margin: 0 0 32px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
-  line-height: 1.175;
+  line-height: 1.18;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -1558,7 +1558,7 @@ html {
 }
 
 .advantages {
-  background-color: #F8FDFF;
+  background-color: #f8fdff;
 }
 
 .advantages__wrapper {
@@ -1583,7 +1583,7 @@ html {
 .advantage-card {
   min-height: 300px;
   padding: 40px 45px 35px;
-  outline: 1px solid #EBEBEB;
+  outline: 1px solid #ebebeb;
   position: relative;
 }
 
@@ -1594,24 +1594,24 @@ html {
   top: 0;
   width: 5px;
   height: 100%;
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .advantage-card:hover {
   outline: none;
-  background-color: #00B2FF;
-  color: #F2F5F7;
+  background-color: #00b2ff;
+  color: #f2f5f7;
 }
 
 .advantage-card__icon {
   margin-bottom: 20px;
   width: 35px;
   height: 35px;
-  stroke: #00B2FF;
+  stroke: #00b2ff;
 }
 
 .advantage-card:hover .advantage-card__icon {
-  stroke: #F2F5F7;
+  stroke: #f2f5f7;
 }
 
 .advantage-card__title {
@@ -1619,11 +1619,11 @@ html {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .advantage-card:hover .advantage-card__title {
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .advantage-card__description {
@@ -1636,11 +1636,11 @@ html {
 }
 
 .advantage-card:hover .advantage-card__description {
-  color: #F2F5F7;
+  color: #f2f5f7;
 }
 
 .history {
-  background-color: #F8FDFF;
+  background-color: #f8fdff;
 }
 
 .history__wrap {
@@ -1670,7 +1670,7 @@ html {
   margin: 0 0 19px;
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #041827;
 }
 
@@ -1707,7 +1707,7 @@ html {
 
 .products__heading {
   margin: 0 0 50px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.42;
@@ -1789,7 +1789,7 @@ html {
 .form__heading--modal {
   margin-bottom: 5px;
   font-size: 30px;
-  line-height: 1.406;
+  line-height: 1.41;
 }
 
 .form__description {
@@ -1797,7 +1797,7 @@ html {
   font-family: "PT Mono", monospace;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
@@ -1841,35 +1841,35 @@ html {
 .form__item input::-webkit-input-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item input::-moz-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item input:-ms-input-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item input::-ms-input-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item input::placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
@@ -1881,42 +1881,42 @@ html {
   border-radius: 3px;
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item textarea::-webkit-input-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item textarea::-moz-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item textarea:-ms-input-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item textarea::-ms-input-placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
 .form__item textarea::placeholder {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.38;
   color: #ffffff;
 }
 
@@ -1983,7 +1983,7 @@ html {
   opacity: 1;
   left: 12px;
   top: 54%;
-  color: #00B3FF;
+  color: #00b3ff;
 }
 
 .form__item--checkbox-modal input:checked ~ svg {
@@ -1991,8 +1991,7 @@ html {
 }
 
 .feedback {
-  background-color: #00B3FF;
-  background: url("../img/form-background.png") no-repeat center/cover;
+  background: #00b3ff url("../img/form-background.png") no-repeat center/cover;
 }
 
 .feedback__wrapper {
@@ -2055,7 +2054,7 @@ html {
   content: "";
   width: 15px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .footer__partittion .footer__partittion-button::after {
@@ -2065,7 +2064,7 @@ html {
   content: "";
   width: 15px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -2078,7 +2077,7 @@ html {
   content: "";
   width: 15px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .footer__partittion.is-active .footer__partittion-button::after {
@@ -2480,7 +2479,7 @@ html {
 
   .feedback {
     background-image: none;
-    background-color: #00B3FF;
+    background-color: #00b3ff;
   }
 
   .feedback__wrapper {
@@ -2590,7 +2589,7 @@ html {
     width: 100%;
     padding: 13px 30px 11px 25px;
     font-size: 14px;
-    line-height: 1.143;
+    line-height: 1.14;
   }
 
   .btn--unwrap {
@@ -2653,7 +2652,7 @@ html {
   .leading__heading {
     margin-bottom: 8px;
     font-size: 36px;
-    line-height: 1.167;
+    line-height: 1.17;
   }
 
   .leading__description {
@@ -2711,12 +2710,12 @@ html {
 
   .history__heading {
     font-size: 28px;
-    line-height: 1.406;
+    line-height: 1.41;
   }
 
   .history__text {
     font-size: 14px;
-    line-height: 1.344;
+    line-height: 1.34;
   }
 
   .history__text--not-mobile {
@@ -2739,7 +2738,7 @@ html {
     margin-bottom: 28px;
     padding-right: 8px;
     font-size: 28px;
-    line-height: 1.406;
+    line-height: 1.41;
   }
 
   .products__heading--not-mobile {
@@ -2769,13 +2768,13 @@ html {
 
   .form__heading {
     font-size: 30px;
-    line-height: 1.406;
+    line-height: 1.41;
   }
 
   .form__description {
     margin-bottom: 34px;
     font-size: 14px;
-    line-height: 1.344;
+    line-height: 1.34;
   }
 
   .form__list {
