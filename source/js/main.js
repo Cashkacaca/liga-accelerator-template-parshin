@@ -24,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+window.focusLock = new FocusLock();
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
