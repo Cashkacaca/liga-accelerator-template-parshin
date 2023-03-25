@@ -697,7 +697,6 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -1452,7 +1451,7 @@ html {
   width: 100%;
   max-width: 1222px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 62px 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1460,10 +1459,13 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .page-header__logo {
-  margin-right: 160px;
+  margin-right: 20px;
 }
 
 .info-communication {
@@ -1528,7 +1530,9 @@ html {
 }
 
 .leading__wrapper {
-  padding: 317px 0 280px 434px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 317px 0 280px 23.6%;
 }
 
 .leading__heading {
@@ -1570,6 +1574,9 @@ html {
   -moz-column-gap: 32px;
   column-gap: 32px;
   row-gap: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .advantage-card {
@@ -1716,6 +1723,9 @@ html {
   -moz-column-gap: 85px;
   column-gap: 85px;
   row-gap: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .products__card {
@@ -2287,10 +2297,6 @@ html {
 
   .page-header__inner {
     padding: 20px 26px;
-  }
-
-  .page-header__logo {
-    margin-right: 20px;
   }
 
   .page-header__info {
