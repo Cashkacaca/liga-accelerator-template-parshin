@@ -73,11 +73,11 @@
 }
 
 .products__card--fabrication {
-  background: url("../img/products/product-1.jpg") no-repeat center / cover;
+  background: #2a302c url("../img/products/product-1.jpg") no-repeat center / cover;
 
   @include retina {
     @include vp-767 {
-      background: url("../img/products/product-1-mobil@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/product-1-mobil@2x.jpg");
     }
 
 
@@ -91,20 +91,20 @@
   }
 
   @include vp-1023 {
-    background: url("../img/products/product-1-tablet.jpg") no-repeat center / cover;
+    background-image: url("../img/products/product-1-tablet.jpg");
   }
 
   @include vp-767 {
-    background: url("../img/products/product-1-mobil.jpg") no-repeat center / cover;
+    background-image: url("../img/products/product-1-mobil.jpg");
   }
 }
 
 .products__card--montage {
-  background: url("../img/products/product-2.jpg") no-repeat center / cover;
+  background: #2a302c url("../img/products/product-2.jpg") no-repeat center / cover;
 
   @include retina {
     @include vp-767 {
-      background: url("../img/products/product-2-mobil@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/product-2-mobil@2x.jpg");
     }
 
     @include vp-1023 {
@@ -117,20 +117,20 @@
   }
 
   @include vp-1023 {
-    background: url("../img/products/product-2-tablet.jpg") no-repeat center / cover;
+    background-image: url("../img/products/product-2-tablet.jpg");
   }
 
   @include vp-767 {
-    background: url("../img/products/product-2-mobil.jpg") no-repeat center / cover;
+    background-image: url("../img/products/product-2-mobil.jpg");
   }
 }
 
 .products__card--lighting {
-  background: url("../img/products/product-3.jpg") no-repeat center / cover;
+  background: #2a302c url("../img/products/product-3.jpg") no-repeat center / cover;
 
   @include retina {
     @include vp-767 {
-      background: url("../img/products/product-3-mobil@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/product-3-mobil@2x.jpg");
     }
 
     @include vp-1023 {
@@ -143,11 +143,11 @@
   }
 
   @include vp-1023 {
-    background: url("../img/products/product-3-tablet.jpg") no-repeat center / cover;
+    background-image: url("../img/products/product-3-tablet.jpg");
   }
 
   @include vp-767 {
-    background: url("../img/products/product-3-mobil.jpg") no-repeat center / cover;
+    background-image: url("../img/products/product-3-mobil.jpg");
   }
 }
 
