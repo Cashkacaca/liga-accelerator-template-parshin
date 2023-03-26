@@ -158,6 +158,10 @@
   height: 100%;
   padding: 50px 80px 70px 40px;
 
+  @include hover {
+    outline: 1px solid $color-default-white;
+  }
+
   @include vp-1023 {
     padding: 38px 80px 70px 45px;
   }

@@ -72,6 +72,10 @@
 
 .form__item {
   width: 100%;
+
+  @include hover {
+    outline: 1px solid $color-default-black;
+  }
 }
 
 .form__item input {

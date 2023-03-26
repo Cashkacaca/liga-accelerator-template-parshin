@@ -6,7 +6,7 @@
 
   @include retina {
     @include vp-767 {
-      background: url("../img/main-background-mobil@2x.jpg") no-repeat center / cover;
+      background: $color-default-black url("../img/main-background-mobil@2x.jpg") no-repeat center / cover;
     }
 
     @include vp-1023 {
@@ -20,12 +20,12 @@
 
   @include vp-1023 {
     margin-top: -70px;
-    background: url("../img/main-background-tablet.jpg") no-repeat center / cover;
+    background: $color-default-black url("../img/main-background-tablet.jpg") no-repeat center / cover;
   }
 
   @include vp-767 {
     margin-top: -50px;
-    background: url("../img/main-background-mobil.jpg") no-repeat center / cover;
+    background: $color-default-black url("../img/main-background-mobil.jpg") no-repeat center / cover;
   }
 }
 
@@ -78,7 +78,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
     font-size: 14px;
   }
 }

@@ -57,6 +57,10 @@
   line-height: 1.56;
   color: rgba(255, 255, 255, 0.7);
 
+  @include hover {
+    outline: 1px solid $color-default-white;
+  }
+
   @include vp-767 {
     font-size: 14px;
     line-height: 1.79;
