@@ -1532,14 +1532,16 @@ html {
 
 .leading {
   margin-top: -13px;
-  background: #000000 url("../img/main-background.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), #000000 url("../img/main-background.jpg") no-repeat center/cover;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background.jpg") no-repeat center/cover;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background.jpg") no-repeat center/cover;
   color: #f2f5f7;
 }
 
 .leading__wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 317px 0 280px 23.6%;
+  max-width: 1222px;
+  margin: 0 auto 0 434px;
+  padding: 317px 0 280px;
 }
 
 .leading__heading {
@@ -2271,7 +2273,9 @@ html {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 144dpi) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .leading {
-    background-image: url("../img/main-background@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/main-background@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background@2x.jpg");
   }
 
   .products__card--fabrication {
@@ -2343,10 +2347,13 @@ html {
 
   .leading {
     margin-top: -70px;
-    background: #000000 url("../img/main-background-tablet.jpg") no-repeat center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), #000000 url("../img/main-background-tablet.jpg") no-repeat center/cover;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background-tablet.jpg") no-repeat center/cover;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background-tablet.jpg") no-repeat center/cover;
   }
 
   .leading__wrapper {
+    margin-left: 0;
     padding: 148px 0 205px 26px;
   }
 
@@ -2357,7 +2364,7 @@ html {
   }
 
   .leading__description {
-    margin-bottom: 57px;
+    margin-bottom: 56px;
   }
 
   .leading__consulation {
@@ -2571,7 +2578,9 @@ html {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
   .leading {
-    background-image: url("../img/main-background-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/main-background-tablet@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet@2x.jpg");
   }
 
   .products__card--fabrication {
@@ -2650,7 +2659,9 @@ html {
 
   .leading {
     margin-top: -50px;
-    background: #000000 url("../img/main-background-mobil.jpg") no-repeat center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), #000000 url("../img/main-background-mobil.jpg") no-repeat center/cover;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background-mobil.jpg") no-repeat center/cover;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background-mobil.jpg") no-repeat center/cover;
   }
 
   .leading__wrapper {
@@ -2992,7 +3003,9 @@ html {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .leading {
-    background: #000000 url("../img/main-background-mobil@2x.jpg") no-repeat center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), #000000 url("../img/main-background-mobil@2x.jpg") no-repeat center/cover;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background-mobil@2x.jpg") no-repeat center/cover;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), #000000 url("../img/main-background-mobil@2x.jpg") no-repeat center/cover;
   }
 
   .products__card--fabrication {
