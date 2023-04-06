@@ -1,12 +1,12 @@
 .info-communication {
   max-width: 784px;
   display: flex;
-  flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
 
   @include vp-1023 {
+    flex-wrap: wrap;
     justify-content: end;
     align-items: baseline;
   }

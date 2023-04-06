@@ -2,7 +2,13 @@
   background: #00b3ff url("../img/form-background.png") no-repeat center/cover;
 
   @include retina {
-    background-image: url("../img/form-background@2x.png");
+    @media (min-width: $vp-1024) {
+      background-image: url("../img/form-background@2x.png");
+    }
+
+    @include vp-1023 {
+      background-color: #00b3ff;
+    }
   }
 
   @include vp-1023 {

@@ -733,6 +733,10 @@ html {
 }
 
 .btn--order {
+  min-width: 160px;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   padding: 11px 15px;
   background-color: inherit;
   border: 1px solid #f2f5f7;
@@ -1480,8 +1484,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -2291,6 +2293,10 @@ html {
   .products__card--lighting {
     background-image: url("../img/products/product-3@2x.jpg");
   }
+
+  .feedback {
+    background-image: url("../img/form-background@2x.png");
+  }
 }
 
 @media (max-width: 1439px) {
@@ -2313,6 +2319,8 @@ html {
   }
 
   .info-communication {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
@@ -2591,6 +2599,10 @@ html {
 
   .products__card--lighting {
     background-image: url("../img/products/product-3-tablet@2x.jpg");
+  }
+
+  .feedback {
+    background-color: #00b3ff;
   }
 }
 
@@ -3076,9 +3088,5 @@ html {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(5, 24, 39)), to(rgba(5, 24, 39, 0))), url("../img/header-background@2x.png");
     background-image: -o-linear-gradient(rgb(5, 24, 39), rgba(5, 24, 39, 0)), url("../img/header-background@2x.png");
     background-image: linear-gradient(rgb(5, 24, 39), rgba(5, 24, 39, 0)), url("../img/header-background@2x.png");
-  }
-
-  .feedback {
-    background-image: url("../img/form-background@2x.png");
   }
 }
