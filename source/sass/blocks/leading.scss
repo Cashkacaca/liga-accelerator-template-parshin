@@ -31,8 +31,9 @@
 
 .leading__wrapper {
   max-width: 1222px;
-  margin: 0 auto 0 434px;
-  padding: 317px 0 280px;
+  margin: 0 auto;
+  padding: 317px 0 279px 126px;
+
 
   @include vp-1023 {
     margin-left: 0;

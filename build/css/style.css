@@ -1540,8 +1540,8 @@ html {
 
 .leading__wrapper {
   max-width: 1222px;
-  margin: 0 auto 0 434px;
-  padding: 317px 0 280px;
+  margin: 0 auto;
+  padding: 317px 0 279px 126px;
 }
 
 .leading__heading {
@@ -1578,7 +1578,8 @@ html {
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 595px);
+  -ms-grid-columns: (minmax(320px, 595px))[2];
+  grid-template-columns: repeat(2, minmax(320px, 595px));
   -webkit-column-gap: 32px;
   -moz-column-gap: 32px;
   column-gap: 32px;
@@ -1727,7 +1728,8 @@ html {
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
+  -ms-grid-columns: (minmax(230px, 350px))[3];
+  grid-template-columns: repeat(3, minmax(230px, 350px));
   -webkit-column-gap: 85px;
   -moz-column-gap: 85px;
   column-gap: 85px;
@@ -2379,10 +2381,6 @@ html {
     padding: 80px 22px 60px;
   }
 
-  .advantages__cards {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-
   .advantage-card {
     min-height: 360px;
     padding-bottom: 32px;
@@ -2697,7 +2695,8 @@ html {
   }
 
   .advantages__cards {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    -ms-grid-columns: minmax(270px, 1fr);
+    grid-template-columns: minmax(270px, 1fr);
   }
 
   .advantage-card {
