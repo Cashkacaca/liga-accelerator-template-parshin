@@ -1535,6 +1535,10 @@ html {
   margin-right: 6px;
 }
 
+.info-communication__order {
+  margin-top: 5px;
+}
+
 .leading {
   margin-top: -13px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), #000000 url("../img/main-background.jpg") no-repeat center/cover;
@@ -2067,8 +2071,8 @@ html {
 
 .footer__partittion .footer__partittion-button::before {
   position: absolute;
-  right: 2px;
-  top: 9px;
+  right: 26px;
+  top: 27px;
   content: "";
   width: 15px;
   height: 1px;
@@ -2077,8 +2081,8 @@ html {
 
 .footer__partittion .footer__partittion-button::after {
   position: absolute;
-  right: 2px;
-  top: 9px;
+  right: 26px;
+  top: 27px;
   content: "";
   width: 15px;
   height: 1px;
@@ -2090,8 +2094,8 @@ html {
 
 .footer__partittion.is-active .footer__partittion-button::before {
   position: absolute;
-  right: 2px;
-  top: 9px;
+  right: 26px;
+  top: 27px;
   content: "";
   width: 15px;
   height: 1px;
@@ -2106,7 +2110,11 @@ html {
 }
 
 .social__logo-wrap {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
+}
+
+.social__logo {
+  display: inline-block;
 }
 
 .social__network {
@@ -2535,7 +2543,7 @@ html {
   }
 
   .social {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2896,8 +2904,10 @@ html {
   }
 
   .footer__partittion-button {
-    width: 20px;
-    height: 20px;
+    top: 0;
+    left: -24px;
+    width: calc(100% + 48px);
+    height: 100%;
   }
 
   .social {
@@ -2909,7 +2919,7 @@ html {
   }
 
   .social__logo-wrap {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     padding-left: 0;
   }
 
@@ -3073,7 +3083,7 @@ html {
     outline: 1px solid #000000;
   }
 
-  .social__logo-wrap:hover:not(.focus-visible) {
+  .social__logo:hover:not(.focus-visible) {
     outline: 1px solid #ffffff;
   }
 
@@ -3081,11 +3091,10 @@ html {
     outline: 1px solid #ffffff;
   }
 
-  .site-map__item:hover:not(.focus-visible) {
+  .site-map__item a:hover:not(.focus-visible) {
     outline: 1px solid #ffffff;
   }
 
-  .address__item p:hover:not(.focus-visible),
   .address__item a:hover:not(.focus-visible) {
     outline: 1px solid #ffffff;
   }

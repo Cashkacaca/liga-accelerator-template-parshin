@@ -1,6 +1,6 @@
 .social {
   @include vp-1023 {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,11 +13,7 @@
 }
 
 .social__logo-wrap {
-  margin-bottom: 35px;
-
-  @include hover {
-    outline: 1px solid $color-default-white;
-  }
+  margin-bottom: 28px;
 
   @include vp-1023 {
     margin-bottom: 0;
@@ -25,8 +21,16 @@
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     padding-left: 0;
+  }
+}
+
+.social__logo {
+  display: inline-block;
+
+  @include hover {
+    outline: 1px solid $color-default-white;
   }
 }
 

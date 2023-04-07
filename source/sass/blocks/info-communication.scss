@@ -73,6 +73,8 @@
 }
 
 .info-communication__order {
+  margin-top: 5px;
+
   @include vp-1023 {
     display: none;
   }
