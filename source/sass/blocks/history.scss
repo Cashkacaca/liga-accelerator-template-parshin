@@ -78,9 +78,11 @@
   }
 }
 
-// .history__text--hidden {
-//   display: none;
-// }
+.history__accordion.is-active .history__text--not-mobile {
+  @include vp-767 {
+    display: inline;
+  }
+}
 
 .history__button {
   margin-top: -16px;
