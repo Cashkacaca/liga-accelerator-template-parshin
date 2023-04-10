@@ -2281,6 +2281,10 @@ html {
     left: 0;
   }
 
+  .info-communication__item:last-of-type {
+    margin-right: 0;
+  }
+
   .footer__partittion-button {
     display: none;
   }
