@@ -1851,6 +1851,43 @@ html {
   width: 100%;
 }
 
+.form__list--modal .form__item--text {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.form__list--modal .form__item--tel {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.form__item--checkbox {
+  grid-column: -1/-2;
+}
+
+.form__item--checkbox-modal {
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.form__item--button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.form__list--modal .form__item--button {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
 .form__item input {
   padding: 15px;
   width: 100%;
@@ -1944,6 +1981,12 @@ html {
 
 .form__item--textarea {
   grid-column: 1/-1;
+}
+
+.form__item--textarea-modal {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 .form__item--textarea ~ li {
@@ -2849,6 +2892,18 @@ html {
   .form__list {
     -ms-grid-columns: minmax(270px, 1fr);
     grid-template-columns: minmax(270px, 1fr);
+  }
+
+  .form__item--checkbox {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .form__item--button {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
   }
 
   .form__item textarea {

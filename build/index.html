@@ -242,7 +242,7 @@
                   data-message-extra="Проверьте корректность заполнения поля" data-required>
                   <label class="form__label">
                     <span class="visually-hidden">Имя</span>
-                    <input type="text" name="name" placeholder="Имя" required tabindex="1">
+                    <input type="text" name="name" placeholder="Имя" required>
                   </label>
                 </li>
 
@@ -252,28 +252,27 @@
                   data-message-success="Поле заполнено верно" data-required>
                   <label class="form__label">
                     <span class="visually-hidden">Телефон</span>
-                    <input type="tel" name="phone" placeholder="Телефон" required tabindex="2">
+                    <input type="tel" name="phone" placeholder="Телефон" required>
                   </label>
                 </li>
 
                 <li class="form__item form__item--textarea" data-validate-type="text">
-                  <textarea name="question" id="question" cols="35" rows="5" placeholder="Ваш вопрос"
-                    tabindex="3"></textarea>
-                </li>
-
-                <li class="form__item form__item--button">
-                  <button class="btn btn--form" type="submit" tabindex="5">Задать вопрос</button>
+                  <textarea name="question" id="question" cols="35" rows="5" placeholder="Ваш вопрос"></textarea>
                 </li>
 
                 <li class="form__item form__item--checkbox" data-validate-type="checkbox"
                   data-message-base="Поле обязательно к заполнению" data-required>
                   <label class="form__label">
-                    <input type="checkbox" name="consent" value="consent" checked required tabindex="4">
+                    <input type="checkbox" name="consent" value="consent" checked required>
                     <span>Я согласен на обработку персональных данных</span>
                     <svg width="9" height="6">
                       <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
                     </svg>
                   </label>
+                </li>
+
+                <li class="form__item form__item--button">
+                  <button class="btn btn--form" type="submit">Задать вопрос</button>
                 </li>
 
               </ul>
@@ -422,38 +421,34 @@
 
             <ul class="form__list form__list--modal">
 
-              <li class="form__item" data-validate-type="text" data-limitation="name"
+              <li class="form__item form__item--text" data-validate-type="text" data-limitation="name"
                 data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <label class="form__label">
                   <span class="visually-hidden">Имя</span>
-                  <input type="text" name="name-modal" placeholder="Имя" required tabindex="6" data-focus>
+                  <input type="text" name="name-modal" placeholder="Имя" required data-focus>
                 </label>
               </li>
 
-              <li class="form__item" data-validate-type="phone" data-on-input-validate
+              <li class="form__item form__item--tel" data-validate-type="phone" data-on-input-validate
                 data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
                 data-required>
                 <label class="form__label">
                   <span class="visually-hidden">Телефон</span>
-                  <input type="tel" name="phone-modal" placeholder="Телефон" required tabindex="7">
+                  <input type="tel" name="phone-modal" placeholder="Телефон" required>
                 </label>
               </li>
 
               <li class="form__item form__item--textarea form__item--textarea-modal" data-validate-type="text">
-                <textarea name="question-modal" id="question-modal" cols="35" rows="5" placeholder="Ваш вопрос"
-                  tabindex="8"></textarea>
-              </li>
-
-              <li class="form__item form__item--button">
-                <button class="btn btn--form btn--form-modal" type="submit" tabindex="10">Отправить</button>
+                <textarea name="question-modal" id="question-modal" cols="35" rows="5"
+                  placeholder="Ваш вопрос"></textarea>
               </li>
 
               <li class="form__item form__item--checkbox form__item--checkbox-modal" data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <label class="form__label">
-                  <input type="checkbox" name="consent-phone" value="consent" checked required tabindex="9">
+                  <input type="checkbox" name="consent-phone" value="consent" checked required>
                   <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                   <svg width="9" height="6">
                     <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
@@ -461,12 +456,15 @@
                 </label>
               </li>
 
+              <li class="form__item form__item--button">
+                <button class="btn btn--form btn--form-modal" type="submit">Отправить</button>
+              </li>
+
             </ul>
           </fieldset>
         </form>
 
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal
-          tabindex="11">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>

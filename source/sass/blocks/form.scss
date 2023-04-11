@@ -78,6 +78,39 @@
   }
 }
 
+.form__list--modal .form__item--text {
+  order: 1;
+}
+
+.form__list--modal .form__item--tel {
+  order: 2;
+}
+
+.form__item--checkbox {
+  grid-column: -1 / -2;
+
+  @include vp-767 {
+    grid-column: 1 / 2;
+  }
+}
+
+.form__item--checkbox-modal {
+  order: 5;
+}
+
+.form__item--button {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+
+  @include vp-767 {
+    grid-row: 4 / 5;
+  }
+}
+
+.form__list--modal .form__item--button {
+  order: 4;
+}
+
 .form__item input {
   padding: 15px;
   width: 100%;
@@ -123,6 +156,10 @@
 
 .form__item--textarea {
   grid-column: 1 / -1;
+}
+
+.form__item--textarea-modal {
+  order: 3;
 }
 
 .form__item--textarea ~ li {
